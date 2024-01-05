@@ -51,7 +51,7 @@ public class SpeechToTextGooglePlugin implements FlutterPlugin, ActivityAware, P
                 //Use a language model based on free-form speech recognition.
                 intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                         RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+                intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ru-RU");
 
                 //Message to display in dialog box
                 intent.putExtra(RecognizerIntent.EXTRA_PROMPT,
